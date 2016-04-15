@@ -12,7 +12,7 @@ body {
 
 h1 {  
   font-size: 5.625rem; /* 90px / 16px  */
-  color: rgba(255, 255, 255, .5);
+  color: rgba(255, 255, 255, 1);
   text-transform: uppercase;
   font-weight: normal;
   line-height: 1.3;
@@ -75,12 +75,10 @@ a:active {
 /* Class Selectors ----------------- */
 
 .main-header {
-  background-color: #ffa949;
   padding-top: 170px;
   height: 850px;
-  background-image: url('../img/seattle.jpg');
-  background-size: 100%;
-  background-repeat: no-repeat;
+  background: #ffa949 url('../img/seattle.jpg') no-repeat center;
+  background-size: cover;
 }
 
 .title {
@@ -102,6 +100,12 @@ a:active {
   text-align: center;
 }
 
+.secondary-content {
+  padding-top: 80px;
+  padding-bottom: 70px;
+  border-bottom: 2px solid #dfe2e6;
+  overflow: auto;
+}
 .callout {
   font-size: 1.25em;
   border-bottom: 3px solid;
@@ -132,9 +136,20 @@ a:active {
   width: 50px;
 }
 
+/* Floated Columns ----------------- */
 
+.beers,
+.dogs {
+  width: 45%;
+}
 
+.dogs {
+  float: right;
+}
 
+.beers {
+  float: left;
+}
 
 
 
