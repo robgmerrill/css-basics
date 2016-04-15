@@ -1,5 +1,9 @@
 /* Type Selectors ------------------ */
 
+* {
+  box-sizing: border-box;
+}
+
 body {
   color: #878787;
   margin: 0;
@@ -15,17 +19,26 @@ h1 {
 }
 
 h2 {
-  font-size: 53px;
-  text-decoration: underline;
+  font-size: 3.3125em;
+  font-weight: normal;
+  line-height: 1.1;
+  margin-bottom: .5em; /*26px*/
 }
 
 h3 {
-  font-size: 20px;
+  font-size: 1.25em;
   color: #48525c;
+  line-height: 1.2;
+  margin-bottom: 1.7em; /*34px*/
 }
 
-p {
-}
+/*li {
+  display: inline-block;
+  padding: 0 12px;
+  border-right: solid 1px;
+  margin: 80px 0;
+}*/
+
 
 /* Pseudo-classes ------------------ */
 
@@ -58,6 +71,8 @@ a:active {
 
 .main-header {
   background-color: #ffa949;
+  padding-top: 170px;
+  height: 850px;
 }
 
 .title {
@@ -67,12 +82,30 @@ a:active {
 
 .primary-content, 
 .secondary-content {
-  width: 60%;
+  width: 75%;
+  padding-left: 50px;
+  padding-right: 50px;
+  margin: auto;
+  max-width: 900px;
 }
 
 .primary-content,
 .main-header {
   text-align: center;
+}
+
+.callout {
+  font-size: 1.25em;
+  border-bottom: 3px solid;
+  padding: 0 9px 3px;
+  margin-top: 20px;
+  display: inline-block;
+}
+
+.main-footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  border-bottom: 10px solid #ffa949
 }
 
 .t-border {
@@ -82,10 +115,14 @@ a:active {
 .citylife {
   color: white;
   background-color: #434a52;
-  padding: 100px 120px;
+  padding: 18% 24%;
+  border-top: 10px solid #ffa949;
+  margin: 105px 0 60px;
 }
 
-
+.arrow {
+  width: 50px;
+}
 
 
 
