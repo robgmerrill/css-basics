@@ -32,6 +32,11 @@ h3 {
   margin-bottom: 1.7em; /*34px*/
 }
 
+img {
+  max-width: 100%;
+  margin-bottom: 20px;
+}
+
 /*li {
   display: inline-block;
   padding: 0 12px;
@@ -73,6 +78,9 @@ a:active {
   background-color: #ffa949;
   padding-top: 170px;
   height: 850px;
+  background-image: url('../img/seattle.jpg');
+  background-size: 100%;
+  background-repeat: no-repeat;
 }
 
 .title {
