@@ -104,8 +104,8 @@ a:active {
   padding-top: 80px;
   padding-bottom: 70px;
   border-bottom: 2px solid #dfe2e6;
-  overflow: auto;
 }
+
 .callout {
   font-size: 1.25em;
   border-bottom: 3px solid;
@@ -151,8 +151,13 @@ a:active {
   float: left;
 }
 
+/* Float Clearfix ----------------- */
 
-
+.group:after {
+  content: "";
+  display: table;
+  clear: both;
+}
 
 
 
