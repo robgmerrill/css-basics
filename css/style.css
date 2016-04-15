@@ -36,6 +36,7 @@ h3 {
 img {
   max-width: 100%;
   margin-bottom: 20px;
+  border-radius: 10px;
 }
 
 ul,
@@ -141,6 +142,7 @@ a:active {
   border-top: 10px solid #ffa949;
   margin: 105px 0 60px;
   box-shadow: 0px 15px 20px -12px rgba(0,0,0, .8);
+  border-radius: 10px; 
 }
 
 .arrow {
