@@ -99,19 +99,6 @@ a:active {
   padding-bottom: 60px;
   border-bottom: 10px solid #ffa949; }
 
-.primary-content,
-.secondary-content {
-  width: 75%;
-  padding-left: 50px;
-  padding-right: 50px;
-  margin: auto;
-  max-width: 960px; }
-
-.primary-content,
-.main-header,
-.main-footer {
-  text-align: center; }
-
 .primary-content {
   padding-top: 25px;
   padding-bottom: 95px; }
@@ -142,5 +129,21 @@ a:active {
 
 .dogs {
   float: right; }
+
+/*Center*/
+.main-header, .main-footer, .primary-content {
+  text-align: center; }
+
+/*Top border*/
+.primary-content, .secondary-content {
+  border-top: 2px solid #dfe2e6; }
+
+/*Constainers*/
+.primary-content, .secondary-content {
+  width: 75%;
+  padding-left: 50px;
+  padding-right: 50px;
+  margin: auto;
+  max-width: 960px; }
 
 /*# sourceMappingURL=application.css.map */
