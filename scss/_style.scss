@@ -1,188 +1,21 @@
-/* Web Fonts ------------------ */
-
-@font-face {
-  font-family: 'Abolition Regular';
-    src: url('../fonts/abolition-regular-webfont.eot');
-    src: url('../fonts/abolition-regular-webfont.eot?#iefix') format('embedded-opentype'),
-       url('../fonts/abolition-regular-webfont.woff') format('woff'),
-       url('../fonts/abolition-regular-webfont.ttf') format('truetype');
-}
-
-/* Base Styles ------------------ */
-
-* {
-  box-sizing: border-box;
-}
-
-body {
-  color: #878787;
-  margin: 0;
-  font: 1em/1.5 "Helvetica Neue", Arial, sans-serif;
-}
-
-h1 {  
-  font-size: 5.625rem; /* 90px / 16px  */
-  color: rgba(255, 255, 255, 1);
-  text-transform: uppercase;
-  font-weight: normal;
-  line-height: 1.3;
-  text-shadow: 0 1px 1px rgba(0,0,0,.8);
-  margin: 12px 0 0;
-}
-
-h2 {
-  font-size: 3.3125em;
-  font-weight: normal;
-  line-height: 1.1;
-  margin-bottom: .5em; /*26px*/
-}
-
-h3 {
-  font-size: 1.25em;
-  color: #48525c;
-  line-height: 1.2;
-  margin-bottom: 1.7em; /*34px*/
-}
-
-img {
-  max-width: 100%;
-  margin-bottom: 20px;
-  border-radius: 10px;
-}
-
-ul,
-ol {
-  margin-left: 30px 0; 
-}
-
-li {
-  margin-bottom: 10px;
-}
-
-/*li {
-  display: inline-block;
-  padding: 0 12px;
-  border-right: solid 1px;
-  margin: 80px 0;
-}*/
 
 
-/* Pseudo-classes ------------------ */
 
-a:link {
-  color: rgb(255, 169, 73);
-  text-decoration: none;
-}
 
-a:visited {
-  color: lightblue;
-}
 
-a:hover {
-  color: rgba(255, 169, 73, .4);
-}
-
-a:active {
-  color: lightcoral;
-}
-
-/* ID Selectors -------------------- */
-
-#main-footer {
-  padding-top: 60px;
-  padding-bottom: 60px;
-  border-bottom: solid 10px #ffa949;
-}
-
-/* Class Selectors ----------------- */
-
-.main-header {
-  padding-top: 170px;
-  height: 850px;
-  background: 
-  #ffa949 url('../img/seattle.jpg') no-repeat center;
-  
-  background-size: cover;
-}
-
-.title {
-  color: white;
-  font-size: 1.625rem; /* 26px/16px */
-  letter-spacing: .065em;
-  font-weight: bold;
-  border-bottom: 2px solid;
-  padding-bottom: 10px;
-}
-
-.primary-content, 
-.secondary-content {
-  width: 75%;
-  padding-left: 50px;
-  padding-right: 50px;
-  margin: auto;
-  max-width: 900px;
-}
-
-.primary-content,
-.main-header {
-  text-align: center;
-}
-
-.secondary-content {
-  padding-top: 80px;
-  padding-bottom: 70px;
-  border-bottom: 2px solid #dfe2e6;
-}
-
-.callout {
-  font-size: 1.25em;
-  border-bottom: 3px solid;
-  padding: 0 9px 3px;
-  margin-top: 20px;
-  display: inline-block;
-}
-
-.main-footer {
-  padding-top: 60px;
-  padding-bottom: 60px;
-  border-bottom: 10px solid #ffa949
-}
 
 .t-border {
-  border-top: 2px solid lightgrey; /* Top border styles */
+  border-top: 2px solid #dfe2e6;
 }
 
-.citylife {
-  color: white;
-  background-color: #434a52;
-  padding: 18% 24%;
-  border-top: 10px solid #ffa949;
-  margin: 105px 0 60px;
-  box-shadow: 0px 15px 20px -12px rgba(0,0,0, .8);
-  border-radius: 10px; 
-}
+/* Layout Styles ------------------ */
 
-.arrow {
-  width: 50px;
-  margin-top: 50px;
-}
 
-/* Floated Columns ----------------- */
 
-.beers,
-.dogs {
-  width: 45%;
-}
 
-.dogs {
-  float: right;
-}
 
-.beers {
-  float: left;
-}
 
-/* Float Clearfix ----------------- */
+/* Float Clearfix ------------------ */
 
 .group:after {
   content: "";
@@ -190,7 +23,7 @@ a:active {
   clear: both;
 }
 
-/* Media Queries ------------------ */
+/* Media Queries -------------------- */
 
 @media (max-width: 1024px) {
   .primary-content,
@@ -212,14 +45,14 @@ a:active {
   }
   .main-header {
     max-height: 380px;
-    paddint: 50px 25px 0;
+    padding: 50px 25px 0;
   }
-  .title {
+  .main-title {
     font-size: 1.3rem;
-    border-style: none;
+    border: none;
   }
-  h1 {
-    font-size: 3rem;
+  .main-heading {
+    font-size: 5rem;
     line-height: 1.1;
   }
   .arrow {
@@ -231,7 +64,7 @@ a:active {
   .beers,
   .dogs {
     float: none;
-    width: 100%
+    width: 100%;
   }
   .main-footer {
     padding: 20px 0;
